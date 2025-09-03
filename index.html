@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6G Connectivity Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>6G Connectivity Dashboard</h1>
+        </header>
+        <aside class="dashboard-sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#" class="active" data-content="overview">Overview</a></li>
+                    <li><a href="#" data-content="performance">Performance Metrics</a></li>
+                    <li><a href="#" data-content="devices">Connected Devices</a></li>
+                    <li><a href="#" data-content="settings">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="dashboard-content">
+            <section id="overview" class="content-section active">
+                <h2>Overview</h2>
+                <p>Welcome to your 6G network overview. Real-time data will appear here.</p>
+                <div class="card">
+                    <h3>Current Throughput</h3>
+                    <p id="throughput-data">Loading...</p>
+                </div>
+                <div class="card">
+                    <h3>Latency</h3>
+                    <p id="latency-data">Loading...</p>
+                </div>
+            </section>
+            <section id="performance" class="content-section">
+                <h2>Performance Metrics</h2>
+                <p>Detailed performance graphs and statistics will be displayed here.</p>
+                <!-- Example: Placeholder for a chart -->
+                <canvas id="performanceChart"></canvas>
+            </section>
+            <section id="devices" class="content-section">
+                <h2>Connected Devices</h2>
+                <p>List of all devices currently connected to the 6G network.</p>
+                <ul id="device-list">
+                    <li>Device A - Online</li>
+                    <li>Device B - Online</li>
+                </ul>
+            </section>
+            <section id="settings" class="content-section">
+                <h2>Settings</h2>
+                <p>Manage your dashboard preferences and network configurations.</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Include a charting library like Chart.js if you plan to add graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
